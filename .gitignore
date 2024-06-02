@@ -5,7 +5,6 @@
 go
 .viminfo
 .bash_logout
-.bashrc
 .docker/
 .gitconfig
 .hushlogin
