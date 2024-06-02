@@ -2,6 +2,11 @@ FROM golang:1.18.4-bullseye
 
 WORKDIR /tmp
 ENV DEBIAN_FRONTEND=noninteractive
+
+RUN mkdir -p /etc/apt/keyrings && \
+ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C && \
+ apt-key --keyring /etc/apt/keyrings/mysql.gpg adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+
 RUN apt-get update && \
   apt-get -y upgrade && \
   apt-get install -y wget gcc g++ make sqlite3 && \
