@@ -1,6 +1,8 @@
 *.db
 
 .vscode-server
+.cache
+go
 .viminfo
 .bash_logout
 .bashrc
