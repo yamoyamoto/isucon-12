@@ -1,0 +1,13 @@
+*.db
+
+.vscode-server
+.viminfo
+.bash_logout
+.bashrc
+.docker/
+.gitconfig
+.hushlogin
+.profile
+.ssh/
+
+tmp
